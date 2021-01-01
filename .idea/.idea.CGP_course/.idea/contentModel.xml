@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="CGP_1" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="PlanetRotation.cs" t="Include" />
+            <e p="Rotation.cs" t="Include" />
+            <e p="Scaling.cs" t="Include" />
+            <e p="Transformation.cs" t="Include" />
+            <e p="TransformationGrid.cs" t="Include" />
+            <e p="Translation.cs" t="Include" />
+          </e>
+        </e>
+        <e p="CGP_3" t="Include">
+          <e p="Diffuse.shader" t="Include" />
+          <e p="flat.shader" t="Include" />
+          <e p="Specular.shader" t="Include" />
+        </e>
+        <e p="CGP_4" t="Include">
+          <e p="hologram.shader" t="Include" />
+          <e p="texture.shader" t="Include" />
+        </e>
+        <e p="CGP_6" t="Include">
+          <e p="projector.shader" t="Include" />
+        </e>
+        <e p="Mini_project" t="Include">
+          <e p="DataTransfer.cs" t="Include" />
+          <e p="deformation.shader" t="Include" />
+          <e p="displacementMap.shader" t="Include" />
+          <e p="fractalNoise.shader" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="MonoBehaviourSingleton" t="Include">
+              <e p="MonoBehaviourSingleton.cs" t="Include" />
+            </e>
+            <e p="perlinNoise.cs" t="Include" />
+            <e p="SpectrumManager.cs" t="Include" />
+          </e>
+          <e p="surfaceNoise.shader" t="Include" />
+        </e>
+      </e>
+      <e p="CGP_course.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp/bin" t="ExcludeRecursive" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_CGP_course.-545120223.00" t="ExcludeRecursive" />
+  </component>
+</project>

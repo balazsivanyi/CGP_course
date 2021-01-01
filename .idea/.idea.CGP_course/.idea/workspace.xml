@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="88e3c354-d7f6-40d6-9e0d-50ad05cff9b1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/CGP_1/Scripts/Transformation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mini_project/displacementMap.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CGP_4/hologram.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CGP_6/projector.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mini_project/Scripts/SpectrumManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mini_project/Scripts/MonoBehaviourSingleton/MonoBehaviourSingleton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mini_project/surfaceNoise.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CGP_3/Diffuse.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mini_project/DataTransfer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CGP_4/texture.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mini_project/deformation.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mini_project/fractalNoise.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CGP_3/flat.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CGP_1/Scripts/Translation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CGP_1/Scripts/PlanetRotation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CGP_1/Scripts/TransformationGrid.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CGP_1/Scripts/Rotation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CGP_3/specular.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CGP_1/Scripts/Scaling.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/CGP_1/Transform.cs" />
+        <option value="$PROJECT_DIR$/Assets/CGP_1/Translation.cs" />
+        <option value="$PROJECT_DIR$/Assets/CGP_1/Scaling.cs" />
+        <option value="$PROJECT_DIR$/Assets/CGP_1/TransformationGrid.cs" />
+        <option value="$PROJECT_DIR$/Assets/CGP_1/Rotation.cs" />
+        <option value="$PROJECT_DIR$/Assets/CGP_1/Scripts/PlanetRotation.cs" />
+        <option value="$PROJECT_DIR$/Assets/CGP_1/Scripts/Transformation.cs" />
+        <option value="$PROJECT_DIR$/Assets/CGP_1/Scripts/TransformationGrid.cs" />
+        <option value="$PROJECT_DIR$/Assets/CGP_1/Scripts/Rotation.cs" />
+        <option value="$PROJECT_DIR$/Assets/CGP_1/Scripts/Scaling.cs" />
+        <option value="$PROJECT_DIR$/Assets/CGP_1/Scripts/Translation.cs" />
+        <option value="$PROJECT_DIR$/Assets/CGP_3/flat.shader" />
+        <option value="$PROJECT_DIR$/Assets/CGP_3/Specular.shader" />
+        <option value="$PROJECT_DIR$/Assets/CGP_3/Diffuse.shader" />
+        <option value="$PROJECT_DIR$/Assets/CGP_3/specular.shader" />
+        <option value="$PROJECT_DIR$/Assets/CGP_3/texture.shader" />
+        <option value="$PROJECT_DIR$/Assets/CGP_4/texture.shader" />
+        <option value="$PROJECT_DIR$/Assets/CGP_4/hologram.shader" />
+        <option value="$PROJECT_DIR$/Assets/CGP_6/projector.shader" />
+        <option value="$PROJECT_DIR$/Assets/Mini_project/displacementMap.shader" />
+        <option value="$PROJECT_DIR$/Assets/Mini_project/surfaceNoise.shader" />
+        <option value="$PROJECT_DIR$/Assets/Mini_project/perlinNoise.cs" />
+        <option value="$PROJECT_DIR$/Assets/Mini_project/deformation.shader" />
+        <option value="$PROJECT_DIR$/Assets/Mini_project/SpectrumManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Mini_project/MonoBehaviourSingleton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Mini_project/Scripts/SpectrumManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/DataTransfer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Mini_project/vertexNormals.shader" />
+        <option value="$PROJECT_DIR$/Assets/Mini_project/fractalNoise.shader" />
+        <option value="$PROJECT_DIR$/Assets/Mini_project/DataTransfer.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1gzl6rjo17gsgYrPQbGjGMqMiE5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="Rider.SolutionExplorerActivator" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.ShaderLab" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="88e3c354-d7f6-40d6-9e0d-50ad05cff9b1" name="Default Changelist" comment="" />
+      <created>1599125130430</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599125130430</updated>
+      <workItem from="1599125135782" duration="2129000" />
+      <workItem from="1599553171712" duration="2657000" />
+      <workItem from="1599734026361" duration="1950000" />
+      <workItem from="1599750624485" duration="503000" />
+      <workItem from="1599822424536" duration="5779000" />
+      <workItem from="1600938051567" duration="3450000" />
+      <workItem from="1601536897102" duration="4431000" />
+      <workItem from="1601550466507" duration="3981000" />
+      <workItem from="1602147570716" duration="6991000" />
+      <workItem from="1603351304850" duration="2418000" />
+      <workItem from="1609237503653" duration="14388000" />
+      <workItem from="1609407705704" duration="762000" />
+      <workItem from="1609506796789" duration="6833000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="WindowStateProjectService">
+    <state x="371" y="142" key="SettingsEditor" timestamp="1602156571047">
+      <screen x="0" y="23" width="1680" height="961" />
+    </state>
+    <state x="371" y="142" key="SettingsEditor/0.23.1680.961@0.23.1680.961" timestamp="1602156571047" />
+  </component>
+</project>
