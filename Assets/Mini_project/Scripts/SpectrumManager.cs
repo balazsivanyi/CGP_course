@@ -7,7 +7,6 @@ public class SpectrumManager : MonoBehaviourSingleton<SpectrumManager>
 {
 
     [SerializeField] private AudioSource _audioSource = null;
-
     [SerializeField] private float[] samples = new float[512];
 
     [SerializeField] private FFTWindow FftWindowType = FFTWindow.Blackman;

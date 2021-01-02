@@ -54,12 +54,12 @@
      <Compile Include="Assets\CGP_1\Scripts\Scaling.cs" />
      <Compile Include="Assets\Mini_project\Scripts\SpectrumManager.cs" />
      <Compile Include="Assets\CGP_1\Scripts\Rotation.cs" />
+     <Compile Include="Assets\Mini_project\Scripts\MonoBehaviourSingleton\MonoBehaviourSingleton.cs" />
      <Compile Include="Assets\CGP_1\Scripts\Transformation.cs" />
      <Compile Include="Assets\CGP_1\Scripts\PlanetRotation.cs" />
+     <Compile Include="Assets\Mini_project\DataTransfer.cs" />
      <Compile Include="Assets\CGP_1\Scripts\TransformationGrid.cs" />
      <Compile Include="Assets\Mini_project\Scripts\perlinNoise.cs" />
-     <Compile Include="Assets\Mini_project\Scripts\MonoBehaviourSingleton\MonoBehaviourSingleton.cs" />
-     <Compile Include="Assets\Mini_project\DataTransfer.cs" />
      <None Include="Assets\Mini_project\deformation.shader" />
      <None Include="Assets\CGP_6\projector.shader" />
      <None Include="Assets\CGP_3\flat.shader" />

@@ -17,9 +17,9 @@ public class DataTransfer : MonoBehaviour
     [SerializeField]  private Material fractalNoiseMat = null;
 
     private SpectrumManager _spectrumManager = null;
-    private float sampleMultiplier = 1000.0f;
+    [SerializeField] private float sampleMultiplier = 100.0f;
 
-    private bool useAudioSample = false;
+    [SerializeField] private bool useAudioSample = true;
     
     [SerializeField] private float delay = 1.0f;
     private float elapsedTime = 0;
@@ -64,6 +64,5 @@ public class DataTransfer : MonoBehaviour
         frequencySlider.value = input;
         fractalNoiseMat.SetFloat("_amplitude", amplitudeSlider.value);
         fractalNoiseMat.SetFloat("_frequency", frequencySlider.value);
-
     }
 }

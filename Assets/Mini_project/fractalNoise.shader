@@ -1,9 +1,9 @@
 ﻿Shader "MiniProject/FractalNoise" {
 
 Properties {
-    //_Amplitude("Amplitude", Float) = 0.5
+    
     _offsetX ("OffsetX", Float) = 0.0
-    _offsetY ("OffsetY", Float) = 0.0      
+    _offsetY ("OffsetY", Float) = 0.0          
     _octaves ("Octaves", Int) = 7
     _lacunarity("Lacunarity", Range( 1.0 , 5.0)) = 2
     _gain("Gain", Range( 0.0 , 1.0)) = 0.5
@@ -11,10 +11,8 @@ Properties {
     _amplitude("Amplitude", Range( 0.0 , 5.0)) = 1.5
     _frequency("Frequency", Range( 0.0 , 6.0)) = 2.0
     _power("Power", Range( 0.1 , 5.0)) = 1.0
-    _scale("Scale", Float) = 1.0
+    _scale("Scale", Range(0.0, 5.0)) = 1.0
     _color ("Color", Color) = (1.0,1.0,1.0,1.0)      
-    [Toggle] _monochromatic("Monochromatic", Float) = 0
-    _range("Monochromatic Range", Range( 0.0 , 1.0)) = 0.5 
 }
 
 SubShader {
@@ -37,8 +35,9 @@ SubShader {
         };
 
         struct v2f {
-            float4 pos : SV_POSITION;
+            float4 vertex : SV_POSITION;
             fixed4 color : COLOR;
+            float2 uv : TEXCOORD0;
         };
         
         float _octaves, _lacunarity, _gain,_value, _amplitude, _frequency, _offsetX, _offsetY, _power, _scale, _monochromatic, _range;
@@ -52,19 +51,24 @@ SubShader {
                     float2 i = floor(p * _frequency);
                     float2 f = frac(p * _frequency);      
                     float2 t = f * f * f * (f * (f * 6.0 - 15.0) + 10.0);
+                    
                     float2 a = i + float2(0.0, 0.0);
                     float2 b = i + float2(1.0, 0.0);
                     float2 c = i + float2(0.0, 1.0);
                     float2 d = i + float2(1.0, 1.0);
+                    
                     a = -1.0 + 2.0 * frac(sin(float2(dot(a, float2(127.1, 311.7)), dot(a, float2(269.5, 183.3)))) * 43758.5453123);
                     b = -1.0 + 2.0 * frac(sin(float2(dot(b, float2(127.1, 311.7)), dot(b, float2(269.5, 183.3)))) * 43758.5453123);
                     c = -1.0 + 2.0 * frac(sin(float2(dot(c, float2(127.1, 311.7)), dot(c, float2(269.5, 183.3)))) * 43758.5453123);
                     d = -1.0 + 2.0 * frac(sin(float2(dot(d, float2(127.1, 311.7)), dot(d, float2(269.5, 183.3)))) * 43758.5453123);
+                    
                     float A = dot(a, f - float2(0.0, 0.0));
                     float B = dot(b, f - float2(1.0, 0.0));
                     float C = dot(c, f - float2(0.0, 1.0));
                     float D = dot(d, f - float2(1.0, 1.0));
+                    
                     float noise = (lerp(lerp(A, B, t.x), lerp(C, D, t.x), t.y));              
+                    
                     _value += _amplitude * noise;
                     _frequency *= _lacunarity;
                     _amplitude *= _gain;
@@ -76,24 +80,38 @@ SubShader {
         v2f vert (appdata v) {
             v2f o;
             
-            v.vertex.x *= fbm(v.normal + sin(_Time.x));
+            v.vertex.xyz = fbm(v.vertex.xyz + _Time) * v.normal;
+           
+            /*v.vertex.x *= fbm(v.normal + sin(_Time.x));
             v.vertex.y *= fbm(v.normal + sin(_Time.y));
-            v.vertex.z *= fbm(v.normal + sin(_Time.z));
+            v.vertex.z *= fbm(v.normal + sin(_Time.z)); */
             
-            
-            o.pos = UnityObjectToClipPos(v.vertex);
-            
-            o.color.xyz = v.normal * 0.5 + 0.5;
-            o.color.w = 1.0;
+            o.vertex = UnityObjectToClipPos(v.vertex);
             
             half3 normalsInWorldSpace = normalize(UnityObjectToWorldNormal(v.normal));
             half diffuseAmount = max(0, dot(normalsInWorldSpace, _WorldSpaceLightPos0.xyz));
             o.color = _LightColor0 * diffuseAmount;
+            o.uv = v.texcoord; // map uv 
             
             return o;
         }
         
         fixed4 frag (v2f i) : SV_Target {
+            
+            float2 texcoord = i.uv.xy;
+            float c = fbm(texcoord);
+            
+            i.color = float4(c, c, c, c) * _color;
+            
+            
+            
+            /*if (_monochromatic == 0.0)
+                return float4(c,c,c,c) * _color;
+            else
+            if (c<_range)
+                return 0;
+            else
+                return 1; */
             return i.color;
         }
         
