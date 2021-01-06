@@ -25,24 +25,25 @@ SubShader {
         #include "UnityCG.cginc"
         #include "UnityLightingCommon.cginc"
         
-        float _Amplitude;
 
-        // vertex input: position, normal
+        // vertex input:
         struct appdata {
             float4 vertex : POSITION;
             float3 normal : NORMAL;
             float4 texcoord : TEXCOORD0;
         };
-
+        // vertex to fragment
         struct v2f {
             float4 vertex : SV_POSITION;
             fixed4 color : COLOR;
             float2 uv : TEXCOORD0;
         };
         
-        float _octaves, _lacunarity, _gain,_value, _amplitude, _frequency, _offsetX, _offsetY, _power, _scale, _monochromatic, _range;
+        // variables for fBM
+        float _octaves, _lacunarity, _gain, _value, _amplitude, _frequency, _offsetX, _offsetY, _power, _scale, _monochromatic, _range;
         float4 _color;
         
+        //fBM method implementation 
         float fbm(float2 p)
             {
                 p = p * _scale + float2(_offsetX, _offsetY);
@@ -77,15 +78,12 @@ SubShader {
                 return pow(_value * 0.5 + 0.5, _power);
             }
         
-        v2f vert (appdata v) {
+        //vertex shader
+        v2f vert (appdata v) 
+        {
             v2f o;
             
             v.vertex.xyz = fbm(v.vertex.xyz + _Time) * v.normal;
-           
-            /*v.vertex.x *= fbm(v.normal + sin(_Time.x));
-            v.vertex.y *= fbm(v.normal + sin(_Time.y));
-            v.vertex.z *= fbm(v.normal + sin(_Time.z)); */
-            
             o.vertex = UnityObjectToClipPos(v.vertex);
             
             half3 normalsInWorldSpace = normalize(UnityObjectToWorldNormal(v.normal));
@@ -96,25 +94,15 @@ SubShader {
             return o;
         }
         
-        fixed4 frag (v2f i) : SV_Target {
+        //fragment shader
+        fixed4 frag (v2f i) : SV_Target 
+        {
+            float2 texcoord = i.uv;
+            float c = fbm(texcoord * i.color);
+           
+            return i.color * _color * float4(c, c, c, c);
             
-            float2 texcoord = i.uv.xy;
-            float c = fbm(texcoord);
-            
-            i.color = float4(c, c, c, c) * _color;
-            
-            
-            
-            /*if (_monochromatic == 0.0)
-                return float4(c,c,c,c) * _color;
-            else
-            if (c<_range)
-                return 0;
-            else
-                return 1; */
-            return i.color;
         }
-        
         ENDCG
     }
 }

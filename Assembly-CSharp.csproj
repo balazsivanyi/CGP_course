@@ -57,18 +57,15 @@
      <Compile Include="Assets\Mini_project\Scripts\MonoBehaviourSingleton\MonoBehaviourSingleton.cs" />
      <Compile Include="Assets\CGP_1\Scripts\Transformation.cs" />
      <Compile Include="Assets\CGP_1\Scripts\PlanetRotation.cs" />
-     <Compile Include="Assets\Mini_project\DataTransfer.cs" />
+     <Compile Include="Assets\Mini_project\Scripts\DataTransfer.cs" />
      <Compile Include="Assets\CGP_1\Scripts\TransformationGrid.cs" />
      <Compile Include="Assets\Mini_project\Scripts\perlinNoise.cs" />
-     <None Include="Assets\Mini_project\deformation.shader" />
      <None Include="Assets\CGP_6\projector.shader" />
      <None Include="Assets\CGP_3\flat.shader" />
      <None Include="Assets\CGP_3\specular.shader" />
      <None Include="Assets\CGP_4\texture.shader" />
      <None Include="Assets\Mini_project\fractalNoise.shader" />
-     <None Include="Assets\Mini_project\surfaceNoise.shader" />
      <None Include="Assets\CGP_4\hologram.shader" />
-     <None Include="Assets\Mini_project\displacementMap.shader" />
      <None Include="Assets\CGP_3\Diffuse.shader" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/balazsivanyi/AAU/5th_semester/CGP/CGP_course/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

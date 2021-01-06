@@ -27,18 +27,16 @@
           <e p="projector.shader" t="Include" />
         </e>
         <e p="Mini_project" t="Include">
-          <e p="DataTransfer.cs" t="Include" />
-          <e p="deformation.shader" t="Include" />
           <e p="displacementMap.shader" t="Include" />
           <e p="fractalNoise.shader" t="Include" />
           <e p="Scripts" t="Include">
+            <e p="DataTransfer.cs" t="Include" />
             <e p="MonoBehaviourSingleton" t="Include">
               <e p="MonoBehaviourSingleton.cs" t="Include" />
             </e>
             <e p="perlinNoise.cs" t="Include" />
             <e p="SpectrumManager.cs" t="Include" />
           </e>
-          <e p="surfaceNoise.shader" t="Include" />
         </e>
       </e>
       <e p="CGP_course.sln" t="IncludeFlat" />
